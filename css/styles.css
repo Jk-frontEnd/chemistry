@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
 
     display: flex;
+    align-items: baseline;
 }
 
 /*sidebar*/
@@ -19,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    border-right: 2px solid #acacac;
     max-width: 320px;
 }
 
@@ -67,6 +67,7 @@ body {
 /*main*/
 .main-div {
     padding: 20px;
+    border-left: 2px solid #acacac;
 }
 
 .main__title {
@@ -105,6 +106,20 @@ body {
 
 .chemist__img {
     border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .chemist__img {
+        width: 200px;
+    }
+
+    .main-div {
+        border-left: none;
+    }
+
+    .usage__item {
+        flex-direction: row;
+    }
 }
 
 .chemist__caption {
@@ -149,10 +164,20 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .usage__img {
     border-radius: 16px;
+}
+
+.usage__item {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
