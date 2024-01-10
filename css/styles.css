@@ -1,0 +1,170 @@
+body {
+    background-color: #d2e9c5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    margin: 0;
+    margin: 20px;
+    background-color: #ffffff;
+
+    display: flex;
+}
+
+/*sidebar*/
+.sidebar {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-right: 2px solid #acacac;
+    max-width: 320px;
+}
+
+.rules {
+    margin: 0;
+    padding: 0;
+}
+
+.rules__item {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 12px;
+    background-color: #9ce9c9;
+    color: #000000;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.sidebar>h2 {
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 12px;
+    font-size: 24px;
+    text-decoration: underline wavy #9ce9c9;
+}
+
+.sidebar>p {
+    padding: 0;
+    margin: 0;
+
+    font-size: 14px;
+    color: #646464;
+    margin-bottom: 16px;
+}
+
+.numeration {
+    font-weight: 500;
+}
+
+.lilNumber {
+    font-size: 9px;
+}
+
+/*main*/
+.main-div {
+    padding: 20px;
+}
+
+.main__title {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    text-decoration: underline wavy #9ce9c9;
+}
+
+.highlight {
+    background-color: #9ce9c9;
+    font-weight: 500;
+}
+
+.history__title {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline wavy #9ce9c9;
+}
+
+.chemist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    gap: 20px;
+}
+
+.chemist__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.chemist__img {
+    border-radius: 16px;
+}
+
+.chemist__caption {
+    color: #646464;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    padding: 10px;
+    background-color: #a9d6e5;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: start;
+    gap: 10px;
+}
+
+.info__svg {
+    margin: 0;
+}
+
+.info__message {
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.usage__title {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    text-decoration: underline wavy #9ce9c9;
+}
+
+.usage__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.usage__img {
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        border-right: 2px solid transparent;
+    }
+
+    .main__title {
+        font-size: 26px;
+    }
+}
