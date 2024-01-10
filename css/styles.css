@@ -3,11 +3,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.copyright-header {
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .wrapper {
-    margin: 0;
     margin: 20px;
     background-color: #ffffff;
-
     display: flex;
     align-items: baseline;
 }
@@ -44,7 +54,6 @@ body {
 
     margin-bottom: 12px;
     font-size: 24px;
-    text-decoration: underline wavy #9ce9c9;
 }
 
 .sidebar>p {
@@ -74,7 +83,6 @@ body {
     padding: 0;
     margin: 0;
     font-size: 36px;
-    text-decoration: underline wavy #9ce9c9;
 }
 
 .highlight {
@@ -85,7 +93,6 @@ body {
 .history__title {
     margin: 0;
     padding: 0;
-    text-decoration: underline wavy #9ce9c9;
 }
 
 .chemist {
@@ -111,10 +118,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .chemist__img {
         width: 200px;
-    }
-
-    .main-div {
-        border-left: none;
     }
 
     .usage__item {
@@ -157,7 +160,6 @@ body {
     margin-top: 40px;
     margin-bottom: 12px;
     font-size: 24px;
-    text-decoration: underline wavy #9ce9c9;
 }
 
 .usage__list {
@@ -180,9 +182,66 @@ body {
     flex-direction: column;
 }
 
+/*footer*/
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.copyright-footer-div {
+    display: flex;
+}
+
+.copyright-box {
+    margin-left: auto;
+    text-align: end;
+    font-weight: 500;
+}
+
+.copyright-mark {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    color: #646464;
+    text-align: center;
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    color: #646464;
+}
+
+.copyright-date {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+
 @media screen and (max-width: 768px) {
     .wrapper {
         flex-direction: column-reverse;
+    }
+
+    .copyright-footer-div {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .copyright-box {
+        margin-left: 0;
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .copyright-mark {
+        margin-top: 20px;
+    }
+
+    .main-div {
+        border-left: none;
     }
 
     .sidebar {
